@@ -1,7 +1,8 @@
-package planet
+package handler
 
 import (
-
+	"enconding/json"
+	"net/http"
 )
 
 func GetUniverse(w http.ResponseWriter, r *http.Request) {}

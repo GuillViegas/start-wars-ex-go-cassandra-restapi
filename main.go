@@ -1,11 +1,7 @@
 package main
 
 import (
-	"log"
-	"net/http"
-	"github.com/gorilla/mux"
-
-	"github.com/GuillViegas/start-wars-ex-go-cassandra-restapi/planet"
+	"github.com/GuillViegas/start-wars-ex-go-cassandra-restapi/app"
 )
 
 func main() {
