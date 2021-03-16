@@ -7,7 +7,7 @@ import (
 	"github.com/gorilla/mux"
 
 	"github.com/GuillViegas/start-wars-ex-go-cassandra-restapi/app/handler"
-	"github.com/GuillViegas/start-wars-ex-go-cassandra-restapi/cassandra"
+	"github.com/GuillViegas/start-wars-ex-go-cassandra-restapi/app/cassandra"
 	"github.com/GuillViegas/start-wars-ex-go-cassandra-restapi/config"
 )
 
