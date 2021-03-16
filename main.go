@@ -2,15 +2,13 @@ package main
 
 import (
 	"github.com/GuillViegas/start-wars-ex-go-cassandra-restapi/app"
+	"github.com/GuillViegas/start-wars-ex-go-cassandra-restapi/config"
 )
 
 func main() {
-	router := mux.NewRouter()
+	config := config.GetConfig()
 
-	router.HandleFunc("/planet", GetUniverse).Methods("GET")
-	router.HandleFunc("/planet/{key}", GetPlanet).Methods("GET")
-	router.HandleFunc("/planet", CreatePlanet).Methods("POST")
-	router.HandleFunc("/planet/{id}", DeletePlanet).Methods("DELETE")
-
-	log.Fatal(http.ListenAndServe(":8000", router))
+	app := &app.App{}
+	app.Initialize(config)
+	app.Run(":8000")
 }

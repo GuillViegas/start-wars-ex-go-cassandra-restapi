@@ -5,8 +5,20 @@ type Config struct {
 }
 
 type CassandraCfg struct {
-	Host string
+	Host     string
 	Username string
 	Password string
 	Keyspace string
+}
+
+
+func GetConfig() *Config {
+	return &Config{
+		Cassandra: &CassandraCfg{
+			Host; "",
+			Username: "", 
+			Password: "",
+			Keyspace: "",
+		},
+	}
 }
