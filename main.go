@@ -4,6 +4,8 @@ import (
 	"log"
 	"net/http"
 	"github.com/gorilla/mux"
+
+	"github.com/GuillViegas/start-wars-ex-go-cassandra-restapi/planet"
 )
 
 func main() {
