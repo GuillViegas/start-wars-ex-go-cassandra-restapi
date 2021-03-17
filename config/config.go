@@ -11,14 +11,13 @@ type CassandraCfg struct {
 	Keyspace string
 }
 
-
 func GetConfig() *Config {
 	return &Config{
 		Cassandra: &CassandraCfg{
-			Host; "",
-			Username: "", 
-			Password: "",
-			Keyspace: "",
+			Host:     "127.0.0.1",
+			Username: "planet-app",
+			Password: "cGxhbmV0LWFwcA==",
+			Keyspace: "star-wars",
 		},
 	}
 }

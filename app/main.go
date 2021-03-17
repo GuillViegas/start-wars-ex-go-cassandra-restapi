@@ -18,6 +18,11 @@ type App struct {
 func (a *App) Initialize(config *config.Config) {
 	session := cassandra.InitCluster(config.Cassandra)
 
+	fmt.Println(config.Cassandra.Host)
+	fmt.Println(config.Cassandra.Username)
+	fmt.Println(config.Cassandra.Password)
+	fmt.Println(config.Cassandra.Keyspace)
+
 	a.Router = mux.NewRouter()
 	a.setRouters()
 }
